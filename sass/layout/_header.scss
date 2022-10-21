@@ -1,0 +1,70 @@
+/** Logo **/
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  padding-top: 15px;
+  box-shadow: 0px 2px 7px grey;
+  position: relative;
+  top: 0;
+  background-color: #ffffff;
+
+  &--style {
+    width: 180px;
+    height: auto;
+  }
+}
+
+/** Icon flèche **/
+.fa-arrow-left-long {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  margin-left: 20px;
+}
+
+/** Header **/
+.blockHeader {
+  background-color: $backlightgrey;
+  padding: 50px;
+
+  h1 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 25px;
+  }
+}
+
+/** Location **/
+.location {
+  background-color: $backgrey;
+  padding: 20px 0px;
+  &--link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--text {
+    margin-left: 10px;
+    font-weight: 500;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.locationicon {
+  margin-right: 10px;
+}

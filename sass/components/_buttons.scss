@@ -1,0 +1,28 @@
+/** Bouton dégradé header **/
+.header-btn {
+  align-items: center;
+  &--text {
+    width: 220px;
+    margin: auto;
+    background: linear-gradient(356deg, $primaire 10%, $secondaire 90%);
+    border-radius: 40px;
+    padding: 15px 0px;
+    box-shadow: 0px 5px 7px 1px lightgrey;
+    transition: transform 250ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  p {
+    text-align: center;
+    color: #eeeeee;
+    font-weight: 500;
+  }
+}
+
+.bouton-menu {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}

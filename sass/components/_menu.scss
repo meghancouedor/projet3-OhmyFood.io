@@ -1,0 +1,136 @@
+.menurestaurant {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 40px 40px 0 0;
+  margin-top: -50px;
+  height: auto;
+  padding-left: 25px;
+
+  &-titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+
+    h2 {
+      font-family: "Shrikhand", cursive;
+      font-size: 30px;
+    }
+  }
+
+  /** Titres **/
+
+  &-cards--titre {
+    border-bottom: solid 5px $tertiaire;
+    width: 40px;
+    padding-bottom: 5px;
+
+    h3 {
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+
+  /** Cards **/
+
+  &-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+  }
+
+  &-card {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 15px;
+    background: #ffffff;
+    width: 400px;
+    height: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 6px 7px 3px $backgrey;
+    overflow: hidden;
+    animation: appear 2s ease-in backwards;
+    margin-right: 20px;
+
+    &--text {
+      width: 310px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+
+      h4 {
+        font-size: 18px;
+        margin-bottom: 5px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+
+      p {
+        font-weight: 400;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+
+    &--prix {
+      font-weight: 600;
+      padding-top: 25px;
+      margin-left: 40px;
+      width: 50px;
+      align-items: flex-end;
+      transition-duration: 1s;
+    }
+
+    &--animation {
+      position: absolute;
+      text-align: center;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 65px;
+      background-color: $tertiaire;
+      border-radius: 0px 20px 20px 0px;
+      transform: translateX(65px);
+      transition-duration: 1s;
+
+      i {
+        position: absolute;
+        left: 17px;
+        top: 22px;
+        font-size: 30px;
+        color: #ffffff;
+        opacity: 1;
+        transform: rotate(360deg);
+        transition-duration: 1s;
+      }
+    }
+
+    /** Icon menu **/
+
+    .fa-circle-check {
+      font-size: 23px;
+      color: #ffffff;
+    }
+
+    /** Animations **/
+
+    &:hover > .menurestaurant-card--animation {
+      transform: translateX(0px);
+      cursor: pointer;
+    }
+
+    &:hover > .menurestaurant-card--prix {
+      transform: translateX(-65px);
+      padding-left: 65px;
+    }
+
+    &:hover .menurestaurant-card--animation {
+      i {
+        transform: rotate(0deg);
+      }
+    }
+  }
+}

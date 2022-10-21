@@ -1,0 +1,31 @@
+.coeur-vide {
+  font-size: 170%;
+  margin-top: 5px;
+  color: #000000;
+  &:hover {
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
+
+.coeur-plein {
+  position: absolute;
+  margin-left: -27.1px;
+  font-size: 170%;
+  margin-top: 5px;
+  background: -webkit-linear-gradient(200deg, $primaire 10%, $secondaire 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  transition: opacity 200ms;
+  
+  &:hover {
+    opacity: 100%;
+    cursor: pointer;
+  }
+}
+
+.coeur-marge {
+  margin-right: 30px;
+}

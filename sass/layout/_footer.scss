@@ -1,0 +1,29 @@
+.footer {
+  background-color: $footergrey;
+  padding: 30px 0px;
+
+  img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-content--link {
+    color: #ffffff;
+    margin-bottom: 7px;
+  }
+}
+
+/** Icons **/
+.fa-utensils {
+  margin-right: 10px;
+}
+
+.fa-handshake-angle {
+  margin-right: 4px;
+}
