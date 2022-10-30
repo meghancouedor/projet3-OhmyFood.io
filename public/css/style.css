@@ -12,7 +12,6 @@
 
 .filtres-cards {
   display: flex;
-  justify-content: space-around;
   align-content: center;
   flex-wrap: wrap;
   height: auto;
@@ -21,12 +20,18 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  width: 400px;
+  width: 100%;
   height: 70px;
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0px 8px 7px 3px #f6f6f6;
   transition: background-color 300ms ease-in;
+}
+@media screen and (min-width: 900px) {
+  .filtres-cards a {
+    width: 400px;
+    margin-right: 35px;
+  }
 }
 .filtres-cards a:hover {
   background-color: #f5edff;
@@ -57,6 +62,13 @@
   margin-bottom: 30px;
 }
 
+/** Titres **/
+/**.h2responsive {
+  display: block;
+  max-width: 440px;
+  justify-content: space-around;
+  align-items: flex-start;
+}**/
 * {
   margin: 0;
   padding: 0;
@@ -92,6 +104,11 @@ a:hover {
   padding: 15px 0px;
   box-shadow: 0px 5px 7px 1px lightgrey;
   transition: transform 250ms ease-in-out;
+}
+@media screen and (max-width: 300px) {
+  .header-btn--text {
+    width: 130px;
+  }
 }
 .header-btn--text:hover {
   transform: scale(1.1);
@@ -141,7 +158,6 @@ a:hover {
 /** Cards restaurants index **/
 .restaurants-cards--bloc {
   display: flex;
-  justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
   flex-direction: row;
@@ -149,9 +165,9 @@ a:hover {
 
 .restaurants-cards {
   display: flex;
-  justify-content: space-around;
   height: auto;
   margin-right: 10px;
+  max-width: 100%;
 }
 .restaurants-cards img {
   position: relative;
@@ -168,6 +184,11 @@ a:hover {
   padding: 8px 20px;
   background-color: #99e2d0;
   border-radius: 5px;
+}
+@media screen and (max-width: 450px) {
+  .restaurants-cards--new {
+    margin-left: 10px;
+  }
 }
 .restaurants-cards--new .new-text {
   color: #008766;

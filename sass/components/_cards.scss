@@ -1,7 +1,6 @@
 /** Cards restaurants index **/
 .restaurants-cards--bloc {
   display: flex;
-  justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
   flex-direction: row;
@@ -9,9 +8,9 @@
 
 .restaurants-cards {
   display: flex;
-  justify-content: space-around;
   height: auto;
   margin-right: 10px;
+  max-width: 100%;
 
   img {
     position: relative;
@@ -29,6 +28,9 @@
     padding: 8px 20px;
     background-color: $tertiaire;
     border-radius: 5px;
+    @media screen and (max-width: 450px) {
+      margin-left: 10px;
+    }
     .new-text {
       color: $greennew;
       font-weight: 600;
